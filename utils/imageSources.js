@@ -1,0 +1,27 @@
+const images = {
+  icons: {
+    icn1: require('../assets/icons/arrow-right.png'),
+    icn2: require('../assets/icons/buttons.png'),
+    icn3: require('../assets/icons/check.png'),
+    icn4: require('../assets/icons/envelope.png'),
+    icn5: require('../assets/icons/envelope-solid.png'),
+    icn6: require('../assets/icons/hanger.png'),
+    icn7: require('../assets/icons/infinity.png'),
+    icn8: require('../assets/icons/layout-fluid.png'),
+    icn9: require('../assets/icons/layout-fluid-solid.png'),
+    icn10: require('../assets/icons/marker.png'),
+    icn11: require('../assets/icons/menu-dots.png'),
+    icn12: require('../assets/icons/shop.png'),
+    icn13: require('../assets/icons/shop-solid.png'),
+    icn14: require('../assets/icons/star.png'),
+    icn15: require('../assets/icons/star-solid.png'),
+    icn16: require('../assets/icons/user.png'),
+    icn17: require('../assets/icons/user-solid.png'),
+  },
+  img1: require('../assets/images/gant_jacket.jpeg'),
+  img2: require('../assets/images/green_jacket.jpeg'),
+  img3: require('../assets/images/jacket.png'),
+  img4: require('../assets/images/man.jpeg'),
+  img5: require('../assets/images/white_shirt.jpeg'),
+};
+export default images;

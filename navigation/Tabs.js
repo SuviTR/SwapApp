@@ -2,23 +2,13 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Platform, Stylesheet, Text, View, Image, TouchableOpacity } from 'react-native';
 
-import Images from '../assets/ImageSources';
-
-//screens
-import HomeScreen from '../screens/HomeScreen';
-import ReceivedOfferScreen from '../screens/SwapScreen';
-
-
-//tab names
-const homeName = 'Feed';
-const offersName = 'Offers';
-const favoritesName = 'Favorites';
-const wardrobeName = 'Wardrobe';
-const profileName = 'Profile';
+import images from '../utils/imageSources';
+import { tabDetails } from '../utils/tabDetails';
+import colors from '../theme/colors';
 
 const Tab = createBottomTabNavigator();
 
-const styles = require('../components/styles');
+const styles = require('../styles/styles');
 
 const Tabs = () => {
   return (
@@ -32,22 +22,21 @@ const Tabs = () => {
         },
       }}
       >
-      <Tab.Screen name="Home" component={HomeScreen}
+      <Tab.Screen name={tabDetails[0].tab} component={tabDetails[0].comp}
         options={{
           tabBarIcon: ({focused}) => {
             return(
-              <View style={{alignItems: 'center', justifyContent: 'center', top:10}}>
+              <View style={styles.navTab}>
                 <Image
-                  source={focused ? Images.icons.icn9 : Images.icons.icn8}
+                  source={focused ? tabDetails[0].icon2 : tabDetails[0].icon1}
                   resizeMode='contain'
-                  style={{
-                    width: 25,
-                    height: 25,
-                    tintColor: focused ? '#34229A' : '#000000'
-                  }}
+                  style={[
+                    styles.navIcon,
+                    { tintColor: focused ? colors.purple : colors.black}
+                  ]}
                 />
-                <Text style={{ color: focused ? '#34229A' : '#000000', fontSize: 12 }}>
-                  {homeName}
+                <Text style={{ color: focused ? colors.purple : colors.black, fontSize: 12 }}>
+                  {tabDetails[0].tab}
                 </Text>
               </View>
             );
@@ -55,88 +44,84 @@ const Tabs = () => {
         }}
       />
 
-      <Tab.Screen name={"OFF"} component={ReceivedOfferScreen}
+      <Tab.Screen name={tabDetails[1].tab} component={tabDetails[1].comp}
         options={{
           tabBarIcon: ({focused}) => {
             return(
-              <View style={{alignItems: 'center', justifyContent: 'center', top:10}}>
+              <View style={styles.navTab}>
                 <Image
-                  source={focused ? Images.icons.icn5 : Images.icons.icn4}
+                  source={focused ? images.icons.icn5 : images.icons.icn4}
                   resizeMode='contain'
-                  style={{
-                    width: 25,
-                    height: 25,
-                    tintColor: focused ? '#34229A' : '#000000'
-                  }}
+                  style={[
+                    styles.navIcon,
+                    { tintColor: focused ? colors.purple : colors.black}
+                  ]}
                 />
-                <Text style={{ color: focused ? '#34229A' : '#000000', fontSize: 12 }}>
-                  {offersName}
+                <Text style={{ color: focused ? colors.purple : colors.black, fontSize: 12 }}>
+                  {tabDetails[1].tab}
                 </Text>
               </View>
             );
           }
         }}
       />
-      <Tab.Screen name={favoritesName} component={ReceivedOfferScreen}
+      <Tab.Screen name={tabDetails[2].tab} component={tabDetails[2].comp}
         options={{
           tabBarIcon: ({focused}) => {
             return(
-              <View style={{alignItems: 'center', justifyContent: 'center', top:10}}>
+              <View style={styles.navTab}>
                 <Image
-                  source={focused ? Images.icons.icn15 : Images.icons.icn14}
+                  source={focused ? images.icons.icn15 : images.icons.icn14}
                   resizeMode='contain'
-                  style={{
-                    width: 25,
-                    height: 25,
-                    tintColor: focused ? '#34229A' : '#000000'
-                  }}
+                  style={[
+                    styles.navIcon,
+                    { tintColor: focused ? colors.purple : colors.black}
+                  ]}
                 />
-                <Text style={{ color: focused ? '#34229A' : '#000000', fontSize: 12 }}>
-                  {favoritesName}
+                <Text style={{ color: focused ? colors.purple : colors.black, fontSize: 12 }}>
+                  {tabDetails[2].tab}
                 </Text>
               </View>
             );
           }
         }}
       />
-      <Tab.Screen name={wardrobeName} component={ReceivedOfferScreen}
+      <Tab.Screen name={tabDetails[3].tab} component={tabDetails[3].comp}
         options={{
           tabBarIcon: ({focused}) => {
             return(
-              <View style={{alignItems: 'center', justifyContent: 'center', top:10}}>
+              <View style={styles.navTab}>
                 <Image
-                  source={focused ? Images.icons.icn13 : Images.icons.icn12}
+                  source={focused ? images.icons.icn13 : images.icons.icn12}
                   resizeMode='contain'
-                  style={{
-                    width: 25,
-                    height: 25,
-                    tintColor: focused ? '#34229A' : '#000000'
-                  }}
+                  style={[
+                    styles.navIcon,
+                    { tintColor: focused ? colors.purple : colors.black}
+                  ]}
                 />
-                <Text style={{ color: focused ? '#34229A' : '#000000', fontSize: 12 }}>
-                  {wardrobeName}
+                <Text style={{ color: focused ? colors.purple : colors.black, fontSize: 12 }}>
+                  {tabDetails[3].tab}
                 </Text>
               </View>
             );
           }
         }}
       />
-      <Tab.Screen name={profileName} component={ReceivedOfferScreen}
+      <Tab.Screen name={tabDetails[4].tab} component={tabDetails[4].comp}
         options={{
           tabBarIcon: ({focused}) => {
             return(
-              <View style={{alignItems: 'center', justifyContent: 'center', top:10}}>
+              <View style={styles.navTab}>
                 <Image
-                  source={focused ? Images.icons.icn17 : Images.icons.icn16}
+                  source={focused ? images.icons.icn17 : images.icons.icn16}
                   resizeMode='contain'
-                  style={{
-                    width: 25,
-                    height: 25,
-                    tintColor: focused ? '#34229A' : '#000000'
-                  }}
+                  style={[
+                    styles.navIcon,
+                    { tintColor: focused ? colors.purple : colors.black}
+                  ]}
                 />
-                <Text style={{ color: focused ? '#34229A' : '#000000', fontSize: 12 }}>
-                  {profileName}
+                <Text style={{ color: focused ? colors.purple : colors.black, fontSize: 12 }}>
+                  {tabDetails[4].tab}
                 </Text>
               </View>
             );
