@@ -7,9 +7,13 @@ export const homeScreenFeed = [
     name: 'Tommy Tommy',
     type: 'jacket',
     size: 'S',
-    gender: 'Female',
+    gender: 'female',
     color: 'orange',
-    image: images.img1
+    image: images.img1,
+    user: 'Simona Simonen',
+    location: 'Germany',
+    verified: true,
+    transaction: 'swap',
   },
   {
     key: '1',
@@ -17,9 +21,13 @@ export const homeScreenFeed = [
     name: 'Hampshire',
     type: 'jacket',
     size: 'M',
-    gender: 'Male',
+    gender: 'male',
     color: 'green',
-    image: images.img2
+    image: images.img2,
+    user: 'Simon Simonen',
+    location: 'Germany',
+    verified: true,
+    transaction: 'swap + 500',
   },
   {
     key: '2',
@@ -27,9 +35,13 @@ export const homeScreenFeed = [
     name: 'Hampshire',
     type: 'jacket',
     size: 'M',
-    gender: 'Male',
+    gender: 'male',
     color: 'green',
-    image: images.img3
+    image: images.img3,
+    user: 'Simon Simola',
+    location: 'Finland',
+    verified: false,
+    transaction: 'buy',
   },
   {
     key: '3',
@@ -37,9 +49,13 @@ export const homeScreenFeed = [
     name: 'Hampshire',
     type: 'jacket',
     size: 'M',
-    gender: 'Male',
+    gender: 'male',
     color: 'green',
-    image: images.img2
+    image: images.img2,
+    user: 'Simon Simonen',
+    location: 'Germany',
+    verified: true,
+    transaction: 'swap',
   },
   {
     key: '4',
@@ -47,9 +63,13 @@ export const homeScreenFeed = [
     name: 'Hampshire',
     type: 'jacket',
     size: 'M',
-    gender: 'Male',
+    gender: 'male',
     color: 'green',
-    image: images.img1
+    image: images.img1,
+    user: 'Simon Simonen',
+    location: 'Germany',
+    verified: false,
+    transaction: 'swap',
   },
   {
     key: '5',
@@ -57,9 +77,13 @@ export const homeScreenFeed = [
     name: 'Hampshire',
     type: 'jacket',
     size: 'M',
-    gender: 'Male',
+    gender: 'male',
     color: 'green',
-    image: images.img3
+    image: images.img3,
+    user: 'Simon Simonen',
+    location: 'Germany',
+    verified: true,
+    transaction: 'swap',
   },
   {
     key: '6',
@@ -67,9 +91,13 @@ export const homeScreenFeed = [
     name: 'Hampshire',
     type: 'jacket',
     size: 'M',
-    gender: 'Male',
+    gender: 'male',
     color: 'green',
-    image: images.img1
+    image: images.img1,
+    user: 'Simon Simonen',
+    location: 'Germany',
+    verified: true,
+    transaction: 'swap',
   },
   {
     key: '7',
@@ -77,9 +105,13 @@ export const homeScreenFeed = [
     name: 'Hampshire',
     type: 'jacket',
     size: 'M',
-    gender: 'Male',
+    gender: 'male',
     color: 'green',
-    image: images.img2
+    image: images.img2,
+    user: 'Simon Simonen',
+    location: 'Germany',
+    verified: true,
+    transaction: 'swap',
   },
   {
     key: '8',
@@ -87,8 +119,30 @@ export const homeScreenFeed = [
     name: 'Hampshire',
     type: 'jacket',
     size: 'M',
-    gender: 'Male',
+    gender: 'male',
     color: 'green',
-    image: images.img2
+    image: images.img2,
+    user: 'Simon Simonen',
+    location: 'Germany',
+    verified: true,
+    transaction: 'swap',
   },
+];
+
+export const offeredByIcons = [
+  images.icons.icn10,
+  images.icons.icn3,
+  images.icons.icn11,
+];
+export const offeredByTexts = [
+  "Germany",
+  "Verified",
+  "More",
+];
+
+export const offersFeedIcons = [
+  images.icons.icn21,
+  images.icons.icn22,
+  images.icons.icn20,
+  images.icons.icn19,
 ];

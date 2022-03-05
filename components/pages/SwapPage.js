@@ -2,14 +2,14 @@ import React from 'react';
 import { View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import images from '../utils/imageSources';
+import images from '../../utils/imageSources';
 
-import ImageAtom from '../components/atoms/Image';
-import SwapButtonsOrg from '../components/organisms/SwapButtons';
-import SwapFromTemp from '../components/templates/SwapFrom';
-import HeaderBar from '../containers/HeaderBar';
+import ImageAtom from '../atoms/Image';
+import SwapButtonsOrg from '../organisms/SwapButtons';
+import SwapFromTemp from '../templates/SwapFrom';
+import HeaderBar from '../../containers/HeaderBar';
 
-const styles = require('../styles/styles');
+const styles = require('../../styles/styles');
 
 export default function SwapScreen({ navigation }) {
   return (

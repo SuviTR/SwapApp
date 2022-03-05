@@ -50,8 +50,8 @@ module.exports = StyleSheet.create({
   },
   h2: {
     fontSize: 15,
-    fontWeight: 'bold',
-    textAlign: 'center',
+    //fontWeight: 'bold',
+    //textAlign: 'center',
   },
   text: {
     fontSize: 16,
@@ -158,7 +158,7 @@ module.exports = StyleSheet.create({
     height: '80%',
     width: 1,
     backgroundColor: '#000000',
-    marginLeft: -10
+    //marginLeft: -10
   },
 
   //----- Offered by details-----
@@ -218,7 +218,6 @@ module.exports = StyleSheet.create({
     width: feedImageSize,
     height: feedImageSize,
     borderRadius: 7,
-    marginBottom: 5,
   },
   feedBottomArea: {
     height: screenHeight > 800 ? feedImageSize*1.03 : feedImageSize*1.2,

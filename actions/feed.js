@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 
 import { homeScreenFeed } from '../utils/testData';
-import CardFeedOrg from '../components/organisms/CardFeed';
+import CardFeedSquareOrg from '../components/organisms/CardFeedSquare';
 
 const styles = require('../styles/styles');
 
@@ -17,7 +17,7 @@ function feedList() {
   for(let i = 0; i < length; i++){
     feed.push(
       <View key={key} style={styles.feedRowContainer}>
-        <CardFeedOrg
+        <CardFeedSquareOrg
           path={homeScreenFeed[i].image}
           brand={homeScreenFeed[i].brand}
           name={homeScreenFeed[i].name}
@@ -27,7 +27,7 @@ function feedList() {
           color={homeScreenFeed[i].color}
         />
         {i+1 < 9 ?
-          <CardFeedOrg
+          <CardFeedSquareOrg
             path={homeScreenFeed[j].image}
             brand={homeScreenFeed[j].brand}
             name={homeScreenFeed[j].name}

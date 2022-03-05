@@ -2,7 +2,8 @@ import images from './imageSources';
 
 //screens
 import HomeScreen from '../screens/HomeScreen';
-import OffersScreen from '../screens/SwapScreen';
+import OffersScreen from '../screens/OffersScreen';
+import FavoritesScreen from '../components/pages/SwapPage';
 
 //tab names
 const homeName = 'Feed';
@@ -29,7 +30,7 @@ export const tabDetails = [
   {
     key: '2',
     tab: favoritesName,
-    comp: OffersScreen,
+    comp: FavoritesScreen,
     icon1: images.icons.icn14,
     icon2: images.icons.icn15,
   },
