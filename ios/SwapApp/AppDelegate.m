@@ -1,5 +1,4 @@
 #import "AppDelegate.h"
-@import Firebase;
 
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
@@ -41,8 +40,6 @@ static void InitializeFlipper(UIApplication *application) {
     [[ReactNativeNavigation getBridge] moduleForClass:[RCTDevLoadingView class]];
   #endif
   */
-  [FIRApp configure];
-  
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
                                                    moduleName:@"SwapApp"
