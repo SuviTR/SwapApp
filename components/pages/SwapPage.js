@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import images from '../../utils/imageSources';
@@ -11,12 +11,28 @@ import HeaderBar from '../../containers/HeaderBar';
 
 const styles = require('../../styles/styles');
 
-export default function SwapScreen({ navigation }) {
+function getSwapImage(offerID) {
+  return(
+    <View>
+      <Text>
+        {offerID}
+        HEI
+      </Text>
+
+    </View>
+  )
+}
+
+export default function SwapPage({ route }) {
+
+  //const { offerId } = route.params.offerId;
+
   return (
     <SafeAreaView>
       <HeaderBar headerTitle='You have an offer'/>
       <View style={[styles.container, styles.swapScreen]}>
         <ImageAtom path={images.img2} imageStyle={styles.swapImageLarge}/>
+        {getSwapImage()}
         <View style={styles.swapDetailsContainer}>
           <SwapFromTemp />
           <SwapButtonsOrg />

@@ -2,7 +2,7 @@ import React from 'react';
 import { Dimensions, View, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import feedList from '../actions/feed';
+import feed from '../actions/feed';
 import HeaderBar from '../containers/HeaderBar';
 
 const styles = require('../styles/styles');
@@ -17,7 +17,7 @@ export default function HomeScreen({ navigation }) {
       <View style={[styles.container]}>
         <ScrollView>
           <View style={styles.feedColumnContainer}>
-            {feedList()}
+            {feed()}
           </View>
         </ScrollView>
       </View>
