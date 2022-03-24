@@ -6,7 +6,7 @@ import CardFeedSquareOrg from '../components/organisms/CardFeedSquare';
 
 const styles = require('../styles/styles');
 
-function feedList() {
+function feed() {
   var feed = [];
   var length = homeScreenFeed.length;
   if (length % 2 != 0) {
@@ -47,4 +47,4 @@ function feedList() {
   feed.push(<View key={j} style={styles.feedBottomArea}/>)
   return feed;
 }
-export default feedList;
+export default feed;
